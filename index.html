@@ -1,0 +1,211 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content= 
+		"width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" href="css/style.css"> 
+	<title>Perjalanan Ini</title> 
+</head> 
+
+<body> 
+	<nav> 
+		<div class="heading">Perjalanan Ini</div> 
+		<span class="sideMenuButton"
+			onclick="openNavbar()"> 
+			☰ 
+		</span> 
+
+		<div class="navbar"> 
+			<ul> 
+				<li><a href="#Beranda">Beranda</a></li> 
+				<li><a href="#Paket">Paket Perjalanan</a></li> 
+				<li><a href="#Pesan">Pesan</a></li> 
+			</ul> 
+		</div> 
+	</nav> 
+
+	<!-- Bar navigasi untuk situs yang responsif -->
+	<div class="sideNavigationBar"
+		id="sideNavigationBar"> 
+		<a href="#" class="closeButton"
+			onclick="closeNavbar()"> 
+			 
+		</a> 
+		<a href="#Beranda">Beranda</a> 
+		<a href="#Paket">Paket Perjalanan</a> 
+		<a href="#Pesan">Pesan</a> 
+	</div> 
+
+	<!-- Content -->
+	<div class="line" id="Home"> 
+		<div class="side1"> 
+			<h1>Perjalanan Ini</h1> 
+			<button> 
+				<a href= 
+"https://en.wikivoyage.org/wiki/Main_Page"> 
+					Ayo, cari tahu! 
+				</a> 
+			</button> 
+		</div> 
+		<div class="side2"> 
+			<img src= 
+"https://upload.wikimedia.org/wikipedia/commons/8/84/Eiffel_Tower_and_Seine_River.jpg"
+				width="500"> 
+		</div> 
+	</div> 
+
+    <section class="contact" id="Beranda"> 
+		<div class="content"> 
+			<div class="title"><span>Mengenai Perjalanan Ini</span></div> 
+			<div class="contactMenu"> 
+				<div class="input3"> 
+					<div class="leftside1"> 
+						<div class="title1"> 
+							<span> 
+								Perjalanan Ini
+							</span> 
+						</div> 
+						<div class="content1"> 
+							Kami merupakan layanan travel yang telah 
+                            melayani sejak tahun 1930. Pengalaman kami
+                            telah teruji dalam dunia travel di Indonesia.
+						</div> 
+						<div class="title1"> 
+							<span>Keunggulan kami</span> 
+						</div> 
+						<div class="content1"> 
+							Kami menyediakan harga yang terjangkau
+                            untuk layanan yang prima.
+						</div> 
+					</div> 
+				</div> 
+                <div class="input1"> 
+                    <div class="title1"> 
+                        <span> 
+                            Hubungi Kami
+                        </span> 
+                    </div>
+					<div class="label1">Nama Anda</div> 
+					<div class="input2"> 
+						<input type="text"
+							placeholder="Silakan masukkan nama Anda di sini."> 
+					</div> 
+					<div class="label1"> 
+						<label>E-mail Anda</label> 
+					</div> 
+                    <div class="inputemail"> 
+                            <form name="form1" action="#">
+                                <input type="text" name="text1" />
+                                <br />
+                                <input
+                                  type="submit"
+                                  name="submit"
+                                  value="Submit"
+                                  onclick="validateEmail(document.form1.text1)"
+                                />
+                              
+                        </form>
+					</div>
+
+					<div class="label1"> 
+						<label>Anda tertarik dengan?</label> 
+					</div> 
+					<div class="input2"> 
+                        <form id="travel" >
+                            <select name="Search4" id="yourid">
+                                            <option value="">Silakan pilih</option> 
+                                            <option value="Asia">Asia</option>
+                                            <option value="Eropa">Eropa</option>
+                                            <option value="Amerika">Amerika</option>
+                                            <option value="Lainnya">Lainnya</option>   
+                            </select>
+                        </form>
+					</div> 
+					<div class="button"> 
+						<button>KIRIM</button> 
+					</div> 
+				</div> 
+			</div> 
+		</div> 
+	</section> 
+
+	<section class="about" id="Paket"> 
+		<div class="content"> 
+			<div class="title"> 
+				<span>Paket Perjalanan</span> 
+			</div> 
+			<div class="boxes"> 
+				<div class="box"> 
+					<div class="topic"> 
+						<a href="" target="_blank"> 
+							Asia
+						</a> 
+					</div> 
+					<p> 
+						Jelajahi keindahan Asia dengan paket travel eksklusif kami. 
+                        Nikmati destinasi menakjubkan, budaya yang kaya, dan pengalaman tak terlupakan. 
+                        Pesan sekarang untuk petualangan yang penuh warna di benua yang memukau ini! 
+					</p> 
+				</div> 
+				<div class="box"> 
+
+					<div class="topic"> 
+						<a href="" target="_blank"> 
+							Eropa 
+						</a> 
+					</div> 
+					<p> 
+						Terbanglah ke keajaiban Eropa dengan paket travel istimewa kami. 
+                        Menyatu dengan sejarah megah, nikmati seni yang memukau, dan cicipi kelezatan kuliner otentik. 
+                        Rasakan pesona benua Eropa dalam perjalanan tak terlupakan ini. 
+                        Pesan sekarang dan wujudkan mimpi Eropa Anda!
+					</p> 
+				</div> 
+
+				<div class="box"> 
+					<div class="topic"> 
+						<a href="" target="_blank"> 
+							Amerika
+						</a> 
+					</div> 
+					<p> 
+						Temukan keindahan Amerika dengan paket travel unik kami. 
+                        Terpesona oleh keanekaragaman alam, jelajahi kota-kota megah, dan rasakan getaran budaya yang memukau. 
+                        Dari pantai hingga pegunungan, Amerika menanti untuk dijelajahi. 
+                        Pesan sekarang dan buat kenangan abadi di tanah impian ini!
+					</p> 
+				</div> 
+			</div> 
+		</div> 
+	</section> 
+
+	<section class="contact" id="Pesan"> 
+		<div class="content"> 
+			<div class="title"><span>Segera Berkemas!</span>
+                <br/>
+                <p> Kami memiliki harga super spesial
+                    berlaku hingga akhir tahun 2023.
+                </p>
+            <button> 
+				<a href= 
+    "https://en.wikivoyage.org/wiki/Main_Page"> 
+					Pesan Sekarang!
+				</a> 
+			</button> </div> 
+		</div> 
+	</section> 
+	<!-- Bagian kaki -->
+	<footer> 
+		<div class="kaki"> 
+			<span> 
+				Dibuat untuk tugas SEFC RevoU.
+				</a> 
+			</span> 
+		</div> 
+	</footer> 
+	<script src="js/script.js"></script> 
+</body> 
+</html>
